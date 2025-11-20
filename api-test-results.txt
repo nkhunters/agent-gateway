@@ -1,0 +1,49 @@
+============================================
+Agent Gateway REST API - Live Testing
+============================================
+
+=== Test 1: POST /api/mcp-servers - Register Weather MCP ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.register (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:46:55)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 2: POST /api/mcp-servers - Register Calendar MCP ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.register (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:46:55)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 3: GET /api/mcp-servers - List all servers ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.list (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:109:42)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 4: GET /api/mcp-servers/:serverId - Get weather-mcp details ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.getOne (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:138:41)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 5: GET /api/tools - List all tools ===
+{"tools":[],"totalCount":0}
+
+=== Test 6: GET /api/tools?serverId=weather-mcp ===
+{"tools":[],"totalCount":0}
+
+=== Test 7: GET /api/tools/status - Sync status ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at ToolsController.getStatus (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/ToolsController.ts:118:42)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 8: POST /api/tools/sync - Sync weather-mcp ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at ToolsController.sync (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/ToolsController.ts:71:31)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 9: POST /api/tools/sync - Sync all servers ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at ToolsController.sync (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/ToolsController.ts:71:31)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 10: POST /api/mcp-servers/:serverId/reconnect ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.reconnect (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:212:41)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 11: DELETE /api/mcp-servers/calendar-mcp ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.remove (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:170:51)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 12: GET /api/mcp-servers - Verify deletion ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.list (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:109:42)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 13: No auth header (should fail 401) ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.list (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:109:42)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+=== Test 14: Invalid serverId format (should fail 400) ===
+{"name":"TypeError","message":"Cannot read properties of undefined (reading 'sub')","stack":"TypeError: Cannot read properties of undefined (reading 'sub')\n    at MCPServersController.register (/Users/avinashkumar/Desktop/agent-gateway/src/controllers/MCPServersController.ts:46:55)\n    at ActionMetadata.executeAction (/Users/avinashkumar/Desktop/agent-gateway/node_modules/src/metadata/ActionMetadata.ts:250:62)\n    at /Users/avinashkumar/Desktop/agent-gateway/src/RoutingControllerExecutor.ts:92:35\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"}
+
+============================================
+Tests Complete!
+============================================

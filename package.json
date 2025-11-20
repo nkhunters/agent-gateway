@@ -1,0 +1,59 @@
+{
+  "name": "agent-gateway",
+  "version": "1.0.0",
+  "description": "Agent Gateway Service - MCP Proxy with Token-Based Access Control",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts | npx pino-pretty",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "mcp",
+    "agent-gateway",
+    "proxy",
+    "token-auth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "@types/uuid": "^11.0.0",
+    "axios": "^1.6.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "fastmcp": "latest",
+    "mongoose": "^8.20.0",
+    "pino": "^9.3.2",
+    "reflect-metadata": "^0.2.2",
+    "routing-controllers": "^0.11.3",
+    "typedi": "0.8.0",
+    "uuid": "^11.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.5",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.12.7",
+    "@types/supertest": "^6.0.3",
+    "eslint": "9.39.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.4",
+    "pino-pretty": "^11.2.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "undici": "^5.28.4"
+  }
+}
